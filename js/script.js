@@ -1,8 +1,8 @@
 var names = [];
-names.length = 5;
+// names.length = 5;
 
-for (i = 0; i<names.length; i++){
-	names[i] = prompt('Введите произвольное имя', 0);
+for (i = 0; i<5; i++){
+	names[i] = prompt('Введите произвольное имя');
 }
 var userName = prompt('Пожалуйста, введите имя пользователя');
 
@@ -13,7 +13,7 @@ for (i = 0; i<names.length; i++){ //Если находим в массиве и
 	if(names[i] === userName){
 		var correctName = (userName+', Вы успешно вошли!');
 	}else{
-		var inCorrectName = ('Ошибка! Проверьте, пожалуйста, имя пользователя');
+		var inCorrectName = 'Ошибка! Проверьте, пожалуйста, имя пользователя';
 	}
 }
 if(correctName){ //Если переменная с именем пользователя появилась - выводим сообщение
